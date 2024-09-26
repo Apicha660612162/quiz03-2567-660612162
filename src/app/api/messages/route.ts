@@ -10,7 +10,7 @@ export const GET = async (request: NextRequest) => {
   const room = rooms.find((r) => r.roomId === roomId);
   if (!room) {
     return NextResponse.json(
-      {
+      { 
         ok: false,
         message: `Room is not found`,
       },

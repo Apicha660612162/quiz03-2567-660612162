@@ -12,7 +12,7 @@ export const GET = async () => {
     totalRooms: `${rooms.length}`,
   });
 };
-
+ 
 export const POST = async (request: NextRequest) => {
   const payload = checkToken();
 
